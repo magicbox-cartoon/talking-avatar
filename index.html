@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text to Talking Avatar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Generate Talking Animation</h1>
+
+  <input type="file" id="imageInput" accept="image/*" />
+  <textarea id="textInput" placeholder="Enter text to speak..."></textarea>
+  <select id="ratioSelect">
+    <option value="16:9">Landscape</option>
+    <option value="9:16">Vertical</option>
+  </select>
+  <button onclick="startTalking()">🗣️ Generate Animation</button>
+
+  <div id="output">
+    <canvas id="avatarCanvas" width="640" height="360"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
